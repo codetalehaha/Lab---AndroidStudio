@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="399dp"
+        android:layout_height="33dp"
+        android:background="#2CE2FD"
+        android:text=" Xem thiên can - địa chi"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/nhapNamSinh"
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Nhập năm sinh"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/nutXemNamSinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem năm sinh"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#928A8A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nhapNamSinh"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ketQua"
+        android:layout_width="409dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="12dp"
+        android:background="#BCD7E4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutXemNamSinh" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="209dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/thien_can_dia_chi_2_2713760320"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="313dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ketQua"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/nutOff"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="OFF"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/nutAC"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="AC"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/nutDEL"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:text="DEL"
+                android:backgroundTint="#797070"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phimCong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="+"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/phim1"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="1"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phim2"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="2"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phim3"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="3"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phimTru"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="-"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/phim4"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="4"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phim5"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="5"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phim6"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="6"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phimNhan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="*"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/phim7"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="7"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phim8"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="8"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phim9"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="9"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phimChia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="/"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/phimDauCham"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="."
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phim0"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#928A8A"
+                android:text="0"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/phimBang"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#797070"
+                android:text="="
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
